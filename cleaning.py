@@ -117,4 +117,6 @@ def load_clean_documents(sources: Sequence[SourceFile] | None = None) -> list[Do
 if __name__ == "__main__":
     sample_sources = load_pdf_sources()
     print(audit_pdf_sources(sample_sources))
+    documents = load_clean_documents(sample_sources)
     print(f"Searchable pages: {len(load_clean_documents(sample_sources))}")
+    print( "\33[12;1m" + "hello" + "\33[m")
